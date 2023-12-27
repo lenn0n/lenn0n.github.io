@@ -4,7 +4,7 @@ type Props = {}
 
 function Footer({}: Props) {
   return (
-    <div className='flex justify-center font-bold'>----- Footer -----</div>
+    <div className='flex justify-center font-bold'></div>
   )
 }
 
