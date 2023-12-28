@@ -7,14 +7,22 @@ type Props = {}
 
 function PageWrapper({ }: Props) {
   return (
-    <div className='p-4 relative overflow-hidden'>
-      {Array.from(Array(200).keys()).map((i) => (<div className="circle-container absolute">
-        <div className="circle" key={i}></div>
-      </div>))}
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </div>
+    <>
+      <div className="overflow-hidden h-[90vh] w-[90vw] absolute z-[-2]">
+        <div className="relative">
+          {Array.from(Array(100).keys()).map((i) => (
+            <div className="circle-container absolute">
+              <div className="circle" key={i}></div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className='p-4'>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
+    </>
   )
 }
 

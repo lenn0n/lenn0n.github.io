@@ -101,7 +101,7 @@ function Landing({ }: Props) {
 
   const ProgrammingIcon = ({ icon }: { icon: string }) => {
     return (
-      <div className="flex justify-center w-[60px] h-[60px] rounded-[20px]">
+      <div className="flex justify-center w-[50px] h-[50px] rounded-[20px]">
         <img src={icon} alt=""
           className="rounded-[10px] hover:scale-[1.3] hover:animate-pulse hover:transition-all"
           role='button'
@@ -116,22 +116,29 @@ function Landing({ }: Props) {
         <div className="text-[30px] mb-[-10px]">Hi,</div>
         <div className="text-[80px] flex gap-5">
           <div className="">I'm</div>
-          <div className="text-cyan-500 hover:scale-[1.1] transition-all hover:text-rose-500" role='button'>Lennon</div>
+          <div className="text-cyan-500 transition-all hover:text-cyan-300" role='button'>Lennon</div>
         </div>
-        <div className="text-[30px] text-gray-400 mt-[-20px] ">Front-End Developer</div>
+        <div className="text-[35px] text-gray-400 mt-[-20px] flex items-center  ">
+          <span>Web Developer</span>
+          <span className='ms-4 text-[15px] text-yellow-300'>3 years actual exp.</span>
+        </div>
         <div className="text-[20px] text-white-400 mt-[50px] ">
-          We're a brand and digital design agency building brands that matter in culture.
+          Been working in web development since 2011. If you are looking for someone who has experience with following:
         </div>
         <div className="programming-icons mt-4 flex gap-3 flex-wrap">
           {PLList.map((data) => (
             <ProgrammingIcon icon={data?.icon} />
           ))}
         </div>
-        <div 
-        role='button'
-        className="rounded-[10px] p-4 bg-cyan-600 w-[120px]
-         text-center mt-[60px] font-bold hover:bg-white hover:text-cyan-900 hover:scale-[1.1] transition-all">
-          Contact Me</div>
+
+        <div className="mt-[30px] "></div>
+        <div className="mb-[10px] text-[20px] text-white-400">Then you are in a good place.</div>
+
+        <div
+          role='button'
+          className="rounded-[10px] px-4 py-2 bg-cyan-600 w-[120px] border-cyan-500 border-[3px]
+         text-center text-[20px] hover:bg-white hover:text-cyan-900 hover:scale-[1.1] transition-all">
+          Hire Me!</div>
       </div>
       <div className="">
         {/* { JSON.stringify(selectedPL)} */}
