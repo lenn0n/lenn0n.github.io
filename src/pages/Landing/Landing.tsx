@@ -21,115 +21,120 @@ import ReduxIcon from "@assets/images/icons/redux.png"
 
 type Props = {}
 const PLList = [
-  { 
+  {
     name: "Javascript",
     icon: JavascriptIcon
   },
-  { 
+  {
     name: "TypeScript",
     icon: TSIcon
   },
-  { 
+  {
     name: "HTML",
     icon: HTMLIcon
   },
-  { 
+  {
     name: "CSS",
     icon: CSSIcon
   },
-  { 
+  {
     name: "Boostrap",
     icon: BSIcon
   },
 
-  { 
+  {
     name: "Docker",
     icon: DockerIcon
   },
-  { 
+  {
     name: "Github",
     icon: GithubIcon
   },
-  { 
+  {
     name: "mySQL",
     icon: MySQLIcon
   },
-  { 
+  {
     name: "NGINX",
     icon: NGINXIcon
   },
-  { 
+  {
     name: "NodeJS",
     icon: NodeJSIcon
   },
-  { 
+  {
     name: "PHP",
     icon: PHPIcon
   },
-  { 
+  {
     name: "ReactJS",
     icon: ReactIcon
   },
-  { 
+  {
     name: "Restful API",
     icon: RestAPIIcon
   },
-  { 
+  {
     name: "Tailwind",
     icon: TWIcon
   },
-  { 
+  {
     name: "Redux",
     icon: ReduxIcon
   },
-  { 
+  {
     name: "VueJS",
     icon: VueIcon
   },
-  { 
+  {
     name: "Express",
     icon: ExpressIcon
   },
-  { 
+  {
     name: "Android Studio",
     icon: ASIcon
   },
-  
+
 ]
-function Landing({}: Props) {
-  const selectedPL = useAppSelector((state) => state.system.selectedPL )
+function Landing({ }: Props) {
+  const selectedPL = useAppSelector((state) => state.system.selectedPL)
 
   const ProgrammingIcon = ({ icon }: { icon: string }) => {
     return (
-      <img src={icon} alt="" 
-      className="rounded-[10px] hover:scale-[1.3] hover:animate-pulse hover:transition-all" 
-      height={60} width={60}
-      role='button'
-      />
+      <div className="flex justify-center w-[60px] h-[60px] rounded-[20px]">
+        <img src={icon} alt=""
+          className="rounded-[10px] hover:scale-[1.3] hover:animate-pulse hover:transition-all"
+          role='button'
+        />
+      </div>
     )
   }
 
   return (
-    <div className="mt-10 container mx-auto grid grid-cols-2 place-content-between">
+    <div className="mt-[130px] container mx-auto grid lg:grid-cols-2 place-content-between">
       <div className="">
         <div className="text-[30px] mb-[-10px]">Hi,</div>
         <div className="text-[80px] flex gap-5">
           <div className="">I'm</div>
-          <div className="text-danger-600 font-bold">Lennon</div>
+          <div className="text-cyan-500 hover:scale-[1.1] transition-all hover:text-rose-500" role='button'>Lennon</div>
         </div>
         <div className="text-[30px] text-gray-400 mt-[-20px] ">Front-End Developer</div>
         <div className="text-[20px] text-white-400 mt-[50px] ">
           We're a brand and digital design agency building brands that matter in culture.
         </div>
         <div className="programming-icons mt-4 flex gap-3 flex-wrap">
-            { PLList.map((data) => (
-              <ProgrammingIcon icon={data?.icon}/>
-            ))}
+          {PLList.map((data) => (
+            <ProgrammingIcon icon={data?.icon} />
+          ))}
         </div>
-        <div className="rounded-[10px] p-4 bg-orange-600 w-[100px] text-center mt-[60px] font-bold">Hire Me</div>
+        <div 
+        role='button'
+        className="rounded-[10px] p-4 bg-cyan-600 w-[120px]
+         text-center mt-[60px] font-bold hover:bg-white hover:text-cyan-900 hover:scale-[1.1] transition-all">
+          Contact Me</div>
       </div>
       <div className="">
-      { JSON.stringify(selectedPL)}
+        {/* { JSON.stringify(selectedPL)} */}
       </div>
     </div>
   )

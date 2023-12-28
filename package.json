@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "tw": "tailwindcss -i ./src/tailwind/tailwind.css -o ./src/assets/styles/tailwind.css --watch"
+    "tw": "tailwindcss -i ./src/tailwind/tailwind.css -o ./src/assets/styles/tailwind.css --watch",
+    "scss": "sass --watch src/assets/styles/main.scss:src/assets/styles/main.css"
   },
   "repository": {
     "type": "git",

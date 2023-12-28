@@ -13,11 +13,13 @@ import Landing from "@pages/Landing/Landing"
 import store from '@store/store';
 // CSS STYLES
 import "@assets/styles/tailwind.css"
+import "@assets/styles/addons.css"
+import "@assets/styles/main.css"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route element={<PageWrapper/>}>
+      <Route element={<PageWrapper />}>
         <Route path="/" element={<Landing />} />
       </Route>
     </>))
@@ -25,9 +27,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <Provider store={store}>
-    <Suspense fallback={null}>
-      <RouterProvider router={router} />
-    </Suspense>
+      <Suspense fallback={null}>
+        <RouterProvider router={router} />
+      </Suspense>
     </Provider>
   )
 }
