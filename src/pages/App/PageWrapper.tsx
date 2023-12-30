@@ -17,11 +17,12 @@ function PageWrapper({ }: Props) {
           ))}
         </div>
       </div>
-      <div className='p-4'>
+      <div className='p-4 h-[100vh]'>
         <Navbar />
         <Outlet />
         <Footer />
       </div>
+      {/* <div className="h-[100vh]"></div> */}
     </>
   )
 }

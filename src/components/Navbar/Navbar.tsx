@@ -24,14 +24,19 @@ function Navbar({ }: Props) {
             </div>
           </div>
           <div className="flex  gap-4">
-            <img
-              role="button"
-              className='hover:scale-[1.1] transition-all'
-              src={GitHubIcon} style={{ width: '30px', height: '30px' }} alt="" />
-            <img
-              role="button"
-              className='hover:scale-[1.1] transition-all'
-              src={InstagramIcon} style={{ width: '30px', height: '30px' }} alt="" />
+            <a href="https://github.com/lenn0n" target='_blank'>
+              <img
+                role="button"
+                className='hover:scale-[1.1] transition-all'
+                src={GitHubIcon} style={{ width: '30px', height: '30px' }} alt="" />
+            </a>
+
+            <a href="https://www.instagram.com/lennon_benedict" target='_blank'>
+              <img
+                role="button"
+                className='hover:scale-[1.1] transition-all'
+                src={InstagramIcon} style={{ width: '30px', height: '30px' }} alt="" />
+            </a>
             <img
               role="button"
               className='hover:scale-[1.1] transition-all'
