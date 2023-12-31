@@ -155,9 +155,9 @@ function Skills() {
         role='button'
         onClick={() => { handleSelectProgrammingLanguage(data) }}
       >
-        <div className="flex justify-center flex-col items-center">
+        <div className="flex justify-center flex-col items-center text-center">
           <img src={data.icon} alt=""
-            className="w-[50px] h-[50px] rounded-[10px] hover:scale-[1.3] hover:animate-pulse hover:transition-all"
+            className="w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] rounded-[10px] hover:scale-[1.3] hover:animate-pulse hover:transition-all"
           />
           <div className={`${selectedPL?.name == data?.name ? 'text-yellow-300' : 'text-[#ccc] '} text-[14px] mt-2`}> {data.name}</div>
         </div>
@@ -166,7 +166,7 @@ function Skills() {
   }
 
   return (
-    <div className="programming-icons mt-4 flex gap-3 flex-wrap">
+    <div className="programming-icons mt-4 grid grid-cols-4 sm:flex lg:grid lg:grid-cols-5 xl:flex gap-3 lg:gap-1 xl:gap-3 flex-wrap">
     {PLList.map((data) => (
       <ProgrammingIcon {...data} />
     ))}

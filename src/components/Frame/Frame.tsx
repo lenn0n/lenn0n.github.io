@@ -6,10 +6,10 @@ type Props = {
 
 function Frame({ children }: Props) {
   return (
-    <div className="h-[220px] border-[20px] rounded-br-[100px] 
-    rounded-tl-[100px] border-cyan-600 drop-shadow-xl relative bg-[rgba(255,255,255,0.14)] p-10">
-      <div className="absolute h-[80px] rounded-full w-[80px] border-[15px] border-white-900 opacity-30 bottom-[-45px] left-[-45px]"></div>
-      <div className="absolute h-[80px] rounded-full w-[80px] border-[15px] border-white-900 opacity-30 top-[-45px] right-[-45px]"></div>
+    <div className="h-[220px] border-[8px] rounded-br-[40px] rounded-bl-[30px]
+    rounded-tl-[5px] border-cyan-600 drop-shadow-xl relative bg-[rgba(255,255,255,0.14)] p-10">
+      <div className="absolute h-[30px] w-[30px] rounded-md border-dashed border-[6px] border-white-900 opacity-50 top-[-19px] right-[-19px]"></div>
+      <div className="absolute h-[30px] w-[30px] rounded-md border-dashed border-[6px] border-white-900 opacity-50 top-[-19px] left-[-19px]"></div>
       { children }
     </div>
   )

@@ -11,9 +11,7 @@ function Navbar({ }: Props) {
       <div className="mx-auto container">
         <div className="flex justify-between">
           <div className="flex gap-4 justify-center items-center">
-            <div className="grid grid-cols-2">
-
-              <div className="flex gap-4 justify-center items-center text-[20px]">
+              <div className="flex gap-4 justify-center items-center lg:text-[20px]">
                 <div role="button"
                   className='hover:scale-[1.1] transition-all' >About</div>
                 <div role="button"
@@ -21,9 +19,8 @@ function Navbar({ }: Props) {
                 <div role="button"
                   className='hover:scale-[1.1] transition-all'>Contact</div>
               </div>
-            </div>
           </div>
-          <div className="flex  gap-4">
+          <div className="hidden  gap-4 sm:flex">
             <a href="https://github.com/lenn0n" target='_blank'>
               <img
                 role="button"
