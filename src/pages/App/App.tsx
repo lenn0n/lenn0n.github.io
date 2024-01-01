@@ -15,12 +15,14 @@ import store from '@store/store';
 import "@assets/styles/tailwind.css"
 import "@assets/styles/addons.css"
 import "@assets/styles/main.css"
+import Demo from '@pages/Demo/Demo';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route element={<PageWrapper />}>
         <Route path="/" element={<Landing />} />
+        <Route path="/demo" element={<Demo />} />
       </Route>
     </>))
 

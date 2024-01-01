@@ -1,19 +1,22 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useAppSelector, useAppDispatch } from "@hooks/useRedux"
 
 import Skills from '@components/Skills/Skills'
 import Frame from '@components/Frame/Frame'
 import Button from '@components/Button/Button'
+import Avatar from "@assets/images/avatar.png"
 
 
 type Props = {}
 
 function Landing({ }: Props) {
+  const navigate = useNavigate()
   const selectedPL = useAppSelector((state) => state.system.selectedPL)
   const [showTransition, setShowTransition] = useState<boolean>(true)
 
   return (
-    <div className="mt-[20px] md:mt-[100px] container mx-auto grid lg:grid-cols-2 place-content-between">
+    <div className="mt-[20px] xl:mt-[100px] container mx-auto grid xl:grid-cols-2 place-content-between">
       <div className="">
         <div className="text-[30px] mb-[-10px] hidden sm:block">Hi,</div>
         <div className="text-[40px] sm:text-[80px] flex gap-2 sm:gap-5">
@@ -25,17 +28,27 @@ function Landing({ }: Props) {
           <span className='md:ms-4 text-[16px] text-yellow-300 drop-shadow-xl'>3 yrs work exp.</span>
         </div>
         <div className="text-[16px] sm:text-[20px] text-white-400 mt-[20px] sm:mt-[50px] ">
-          Been working in web development since 2011. If you are looking for someone who has experience with following:
+          Been working in web development since 2015. If you are looking for someone who has experience with following:
         </div>
         <Skills />
 
         <div className="mt-[20px] sm:mt-[50px] "></div>
         <div className="mb-[10px] sm:text-[20px] text-white-400">Then you are in a good place.</div>
 
-        <Button label="Hire Me!"/>
+        <Button label="Hire Me!" onClick={()=> { navigate("/contact")}} />
+
+
       </div>
-      <div className=" justify-between flex-col hidden lg:flex ms-[20px] me-[10px] xl:ms-[100px]">
-        <div className=""></div>
+      <div className=" justify-end flex-col hidden xl:flex ms-[20px] me-[10px] xl:ms-[100px]">
+        {/* <div className="flex justify-center ">
+          <div className="border-x-[8px] relative border-t-[8px] border-cyan-600 bg-[rgba(255,255,255,0.14)] ">
+            <img src={Avatar} alt="" style={{ width: '180px' }} />
+            <div className="absolute h-[30px] w-[30px] rounded-md border-dashed border-[6px] border-white-900 opacity-50 bottom-[-19px] right-[-19px]"></div>
+            <div className="absolute h-[30px] w-[30px] rounded-md border-dashed border-[6px] border-white-900 opacity-50 bottom-[-19px] left-[-19px]"></div>
+            <div className="absolute h-[30px] w-[30px] rounded-md border-dashed border-[6px] border-white-900 opacity-50 top-[-19px] right-[-19px]"></div>
+            <div className="absolute h-[30px] w-[30px] rounded-md border-dashed border-[6px] border-white-900 opacity-50 top-[-19px] left-[-19px]"></div>
+          </div>
+        </div> */}
         <Frame>
           {selectedPL &&
             <div key={selectedPL.name}>
@@ -50,17 +63,11 @@ function Landing({ }: Props) {
             </div>
           }
         </Frame>
-        <div className="flex justify-center">
-          {/* <div
-            role='button'
-            className="rounded-[10px] inline-block px-4 py-2 bg-cyan-600  border-cyan-500 border-[3px]
-         text-center text-[20px] hover:bg-white hover:text-cyan-900 hover:scale-[1.1] transition-all drop-shadow-xl">
-            VIEW GALLERY</div>
-          <div
-            role='button'
-            className="ms-4 rounded-[10px] inline-block px-4 py-2 bg-cyan-600  border-cyan-500 border-[3px]
-         text-center text-[20px] hover:bg-white hover:text-cyan-900 hover:scale-[1.1] transition-all drop-shadow-xl">
-            SEMINARS ATTENDED</div> */}
+        <div className="mt-[40px]">
+          <div className="flex justify-center">
+            <div className="mb-[10px] sm:text-[20px] text-white-400">Here are some of my frontend development journey.</div></div>
+
+          <div className="flex justify-center"><Button label="View Screenshots" className='' onClick={()=> { navigate("/demo")}}/></div>
         </div>
       </div>
     </div>

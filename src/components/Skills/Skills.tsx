@@ -166,7 +166,7 @@ function Skills() {
   }
 
   return (
-    <div className="programming-icons mt-4 grid grid-cols-4 sm:flex lg:grid lg:grid-cols-5 xl:flex gap-3 lg:gap-1 xl:gap-3 flex-wrap">
+    <div className="programming-icons mt-4 grid grid-cols-4 md:grid-cols-5 sm:flex lg:grid lg:grid-cols-10 xl:flex gap-3 lg:gap-1 xl:gap-3 flex-wrap">
     {PLList.map((data) => (
       <ProgrammingIcon {...data} />
     ))}
