@@ -16,7 +16,7 @@ function Landing({ }: Props) {
   const [showTransition, setShowTransition] = useState<boolean>(true)
 
   return (
-    <div className="mt-[20px] xl:mt-[100px] container mx-auto grid xl:grid-cols-2 place-content-between">
+    <div className="mt-[20px] xl:mt-[100px] grid xl:grid-cols-2 place-content-between">
       <div className="">
         <div className="text-[30px] mb-[-10px] hidden sm:block">Hi,</div>
         <div className="text-[40px] sm:text-[80px] flex gap-2 sm:gap-5">
@@ -67,7 +67,7 @@ function Landing({ }: Props) {
           <div className="flex justify-center">
             <div className="mb-[10px] sm:text-[20px] text-white-400">Here are some of my frontend development journey.</div></div>
 
-          <div className="flex justify-center"><Button label="View Screenshots" className='' onClick={()=> { navigate("/demo")}}/></div>
+          <div className="flex justify-center"><Button label="My Journey" className='' onClick={()=> { navigate("/demo")}}/></div>
         </div>
       </div>
     </div>

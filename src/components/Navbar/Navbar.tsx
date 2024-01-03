@@ -19,7 +19,7 @@ function Navbar({ }: Props) {
                   className='hover:scale-[1.1] transition-all' >About</div>
                 <div role="button"
                    onClick={()=> { navigate("/demo") }}
-                  className='hover:scale-[1.1] transition-all'>Portfolio</div>
+                  className='hover:scale-[1.1] transition-all'>Journey</div>
                 <div role="button"
                    onClick={()=> { navigate("/contact") }}
                   className='hover:scale-[1.1] transition-all'>Contact</div>

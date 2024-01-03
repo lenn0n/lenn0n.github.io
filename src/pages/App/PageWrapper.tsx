@@ -19,7 +19,9 @@ function PageWrapper({ }: Props) {
       </div>
       <div className='p-4 h-[100vh]'>
         <Navbar />
-        <Outlet />
+        <div className='container mx-auto'>
+          <Outlet />
+        </div>
         <Footer />
       </div>
       {/* <div className="h-[100vh]"></div> */}

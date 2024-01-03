@@ -2,7 +2,8 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import JavascriptIcon from "@assets/images/icons/js.png"
 // Define a type for the slice state
 interface SystemState {
-  selectedPL: PLTypes
+  selectedPL: PLTypes,
+  selectedYear: number
 }
 
 type PLTypes = {
@@ -21,7 +22,8 @@ const initialState: SystemState = {
     desc: "One of my favorite programming language that I am using for the past years.",
     exp: "9/10",
     isUser: true
-  }
+  },
+  selectedYear: 2020
 }
 
 export const systemSlice = createSlice({
@@ -32,11 +34,15 @@ export const systemSlice = createSlice({
     setSelectedPL: (state, action: PayloadAction<PLTypes>) => {
       state.selectedPL = action.payload;
     },
+    setSelectedYear: (state, action: PayloadAction<number>) => {
+      state.selectedYear = action.payload;
+    },
   },
 });
 
 export const {
-  setSelectedPL
+  setSelectedPL,
+  setSelectedYear
 } = systemSlice.actions
 
 export default systemSlice.reducer;
