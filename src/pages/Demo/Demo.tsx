@@ -18,7 +18,7 @@ function Demo({ }: Props) {
   return (
     <div>
       <div className="mt-[50px]">
-        <div className="flex gap-3 text-[20px]">
+        <div className="flex gap-3 text-[20px] mb-2">
           <div
             role="button"
             onClick={() => { handleChangeYear(2020) }}

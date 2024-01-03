@@ -16,10 +16,11 @@ type Props = {}
 function S2020({ }: Props) {
   return (
     <div className="">
-      <div className="text-[25px] lg:text-[40px] font-bold">September 2020</div>
+      <div className="text-[25px] lg:text-[40px] font-bold">First Project</div>
       <div className="text-[22px] text-[#ccc] mb-4">My first task as a Front-End developer was to develop 
       an online streaming site that involves upload videos, go live, interactions, comments and more. 
-      <span className='text-yellow-500 ms-3'>#ReactJS #Bootstrap</span>
+      It was fun and finally met Docker containers.
+      <span className='text-yellow-500 ms-3'>#ReactJS #Bootstrap #Docker</span>
       </div>
       <div className="grid grid-cols-5 gap-3">
         <Item preview={SSYZ1} />

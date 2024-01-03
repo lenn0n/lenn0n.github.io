@@ -20,6 +20,7 @@ import TSIcon from "@assets/images/icons/typescript.png"
 import VueIcon from "@assets/images/icons/vue.svg"
 import ExpressIcon from "@assets/images/icons/express-js.png"
 import ReduxIcon from "@assets/images/icons/redux.png"
+import FirebaseIcon from "@assets/images/icons/firebase.svg"
 
 const PLList = [
   {
@@ -130,6 +131,12 @@ const PLList = [
     icon: ASIcon,
     desc: "I used this app in my thesis and know some basic relative views.",
     exp: "8/10"
+  },
+  {
+    name: "Firebase",
+    icon: FirebaseIcon,
+    desc: "Cloud functions, free web hosting, real-time database",
+    exp: "9/10"
   },
 
 ]

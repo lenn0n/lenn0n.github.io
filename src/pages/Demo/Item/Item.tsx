@@ -8,10 +8,10 @@ type Props = {
 
 function Item({ preview, title, date }: Props) {
   return (
-    <div className=''>
+    <div className='' role='button'>
       <img
         src={preview}
-        className='rounded-[25px] border-[5px] border-cyan-500 object-cover'
+        className='rounded-[15px] rounded-bl-[30px] border-[5px] border-cyan-500 object-cover'
         alt="" style={{ width: '300px', height: '200px' }}
       />
       <div className="text-[25px] font-bold">{title}</div>
