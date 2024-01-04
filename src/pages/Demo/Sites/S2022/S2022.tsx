@@ -14,8 +14,8 @@ type Props = {}
 function S2022({ }: Props) {
   return (
     <div className="">
-      <div className="text-[25px] lg:text-[40px] font-medium">Improving Skills</div>
-      <div className="md:text-[22px] text-[#ccc] mb-4">
+      <div className="text-[25px] lg:text-[40px] text-cyan-400 font-medium">Improving Skills</div>
+      <div className="md:text-[22px] mb-4">
        Completed some dev challenges and developed two MLM sites. Nothing much project in 2022 so I did some research about container orchestrator,
        Facebook/Twitter SDK
       <span className='text-yellow-500 ms-3'>#VueJS #Tailwind #Bootstrap #VisJS</span>

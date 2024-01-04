@@ -16,8 +16,8 @@ type Props = {}
 function S2020({ }: Props) {
   return (
     <div className="">
-      <div className="text-[25px] lg:text-[40px] font-medium">First Project</div>
-      <div className="md:text-[22px] text-[#ccc] mb-4">My first task as a Front-End developer was to develop 
+      <div className="text-[25px] lg:text-[40px] text-cyan-400 font-medium">First Project</div>
+      <div className="md:text-[22px]  mb-4">My first task as a Front-End developer was to develop 
       an online streaming site that involves upload videos, go live, interactions, comments and more. 
       It was fun and finally met Docker containers.
       <span className='text-yellow-500 ms-3'>#ReactJS #Bootstrap #Docker</span>

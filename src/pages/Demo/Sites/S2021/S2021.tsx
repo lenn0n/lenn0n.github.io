@@ -15,8 +15,8 @@ type Props = {}
 function S2021({ }: Props) {
   return (
     <div className="">
-      <div className="text-[25px] lg:text-[40px] font-medium">Learned from mistakes</div>
-      <div className="md:text-[22px] text-[#ccc] mb-4">
+      <div className="text-[25px] lg:text-[40px] text-cyan-400 font-medium">Learned From Mistakes</div>
+      <div className="md:text-[22px] mb-4">
         I have learned a lot from my previous year, my next project in 2021 was to develop an MLM site. The user can see their downlines 
          in network view. User can login using SSO. Admin can view statistics and more.
       <span className='text-yellow-500 ms-3'>#VueJS #Bootstrap #VisJS</span>

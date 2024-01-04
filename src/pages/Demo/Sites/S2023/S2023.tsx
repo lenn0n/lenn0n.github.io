@@ -15,8 +15,8 @@ type Props = {}
 function S2023({ }: Props) {
   return (
     <div className="">
-      <div className="text-[25px] lg:text-[40px] font-medium">Building, re-creating and improving</div>
-      <div className="md:text-[22px] text-[#ccc] mb-4">
+      <div className="text-[25px] lg:text-[40px] text-cyan-400 font-medium">Putting It All Together</div>
+      <div className="md:text-[22px] mb-4">
         These are my biggest project that has many features 
         such as deposit/withdrawal, P2P transactions, payment thru plaid and elavon, account management and statistics.
       <span className='text-yellow-500 ms-3'>#ReactJS #VueJS #Bootstrap #Tailwind</span>
