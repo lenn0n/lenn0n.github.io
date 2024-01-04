@@ -6,16 +6,18 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import store from '@store/store';
 
 // PAGES
 import PageWrapper from './PageWrapper';
 import Landing from "@pages/Landing/Landing"
-import store from '@store/store';
+import Demo from '@pages/Demo/Demo';
 // CSS STYLES
 import "@assets/styles/tailwind.css"
 import "@assets/styles/addons.css"
 import "@assets/styles/main.css"
-import Demo from '@pages/Demo/Demo';
+import "lightbox2/dist/js/lightbox-plus-jquery.js"
+import "lightbox2/dist/css/lightbox.css"
 
 const router = createBrowserRouter(
   createRoutesFromElements(

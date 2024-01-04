@@ -9,7 +9,7 @@ type Props = {}
 function Navbar({ }: Props) {
   const navigate = useNavigate()
   return (
-    <div className='p-4'>
+    <div className='xs:p-2 sm:p-4'>
       <div className="mx-auto container">
         <div className="flex justify-between">
           <div className="flex gap-4 justify-center items-center">

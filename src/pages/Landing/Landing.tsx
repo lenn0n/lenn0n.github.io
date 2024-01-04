@@ -16,7 +16,7 @@ function Landing({ }: Props) {
   const [showTransition, setShowTransition] = useState<boolean>(true)
 
   return (
-    <div className="mt-[20px] xl:mt-[100px] grid xl:grid-cols-2 place-content-between">
+    <div className="xs:mt-[10px] sm:mt-[20px] xl:mt-[100px] grid xl:grid-cols-2 place-content-between">
       <div className="">
         <div className="text-[30px] mb-[-10px] hidden sm:block">Hi,</div>
         <div className="text-[40px] sm:text-[80px] flex gap-2 sm:gap-5">
@@ -27,15 +27,21 @@ function Landing({ }: Props) {
           <span>Web Developer</span>
           <span className='md:ms-4 text-[16px] text-yellow-300 drop-shadow-xl'>3 yrs work exp.</span>
         </div>
-        <div className="text-[16px] sm:text-[20px] text-white-400 mt-[20px] sm:mt-[50px] ">
+        <div className="text-[14px] sm:text-[20px] text-white-400 mt-[20px] sm:mt-[50px] ">
           Been working in web development since 2015. If you are looking for someone who has experience with following:
         </div>
         <Skills />
-
+        <div className="mt-[20px] text-[14px]  xs:text-[14px] sm:text-[16px] block xl:hidden">
+          <span className='text-yellow-400 me-2'>{selectedPL?.name}</span>
+          <span className='text-[#fff] '>- {selectedPL?.desc}</span>
+        </div>
         <div className="mt-[20px] sm:mt-[50px] "></div>
-        <div className="mb-[10px] sm:text-[20px] text-white-400">Then you are in a good place.</div>
+        <div className="mb-[10px] sm:text-[20px] text-white-400 hidden xl:block">Then you are in a good place.</div>
 
-        <Button label="Hire Me!" onClick={()=> { navigate("/contact")}} />
+        <Button label="Hire Me" onClick={() => { navigate("/contact") }} />
+        <div className="inline-block xl:hidden ms-4">
+          <Button label="My Journey" onClick={() => { navigate("/demo") }} />
+        </div>
 
 
       </div>
@@ -67,9 +73,10 @@ function Landing({ }: Props) {
           <div className="flex justify-center">
             <div className="mb-[10px] sm:text-[20px] text-white-400">Here are some of my frontend development journey.</div></div>
 
-          <div className="flex justify-center"><Button label="My Journey" className='' onClick={()=> { navigate("/demo")}}/></div>
+          <div className="flex justify-center"><Button label="My Journey" className='' onClick={() => { navigate("/demo") }} /></div>
         </div>
       </div>
+
     </div>
   )
 }

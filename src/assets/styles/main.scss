@@ -106,6 +106,6 @@ body, div{
   animation-iteration-count: 1;
 }
 
-.no-animation{
+.lightboxOverlay, .no-animation, .lightbox{
   animation: none !important;
 }

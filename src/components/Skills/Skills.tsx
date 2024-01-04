@@ -84,12 +84,12 @@ const PLList = [
     desc: "ExpressJS and Dealing with CORS. I used this to run my code in container. ",
     exp: "9/10"
   },
-  {
-    name: "PHP",
-    icon: PHPIcon,
-    desc: "Not been using this lately but I still remember some basics of it.",
-    exp: "7/10"
-  },
+  // {
+  //   name: "PHP",
+  //   icon: PHPIcon,
+  //   desc: "Not been using this lately but I still remember some basics of it.",
+  //   exp: "7/10"
+  // },
   {
     name: "ReactJS",
     icon: ReactIcon,
@@ -166,14 +166,14 @@ function Skills() {
           <img src={data.icon} alt=""
             className="w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] rounded-[10px] hover:scale-[1.3] hover:animate-pulse hover:transition-all"
           />
-          <div className={`no-animation ${selectedPL?.name == data?.name ? 'text-yellow-300' : 'text-[#ccc] '} text-[14px] mt-2`}> {data.name}</div>
+          <div className={`no-animation ${selectedPL?.name == data?.name ? 'text-yellow-300' : 'text-[#ccc] '} text-[10px] sm:text-[14px] mt-2`}> {data.name}</div>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="no-animation programming-icons mt-4 grid grid-cols-4 md:grid-cols-5 sm:flex lg:grid lg:grid-cols-10 xl:flex gap-3 lg:gap-1 xl:gap-3 flex-wrap">
+    <div className="no-animation programming-icons mt-4 grid grid-cols-5 md:grid-cols-5 sm:flex lg:grid lg:grid-cols-10 xl:flex gap-3 lg:gap-1 xl:gap-3 flex-wrap">
     {PLList.map((data) => (
       <ProgrammingIcon key={data.name} {...data} />
     ))}

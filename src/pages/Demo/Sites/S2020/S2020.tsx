@@ -16,22 +16,22 @@ type Props = {}
 function S2020({ }: Props) {
   return (
     <div className="">
-      <div className="text-[25px] lg:text-[40px] font-bold">First Project</div>
-      <div className="text-[22px] text-[#ccc] mb-4">My first task as a Front-End developer was to develop 
+      <div className="text-[25px] lg:text-[40px] font-medium">First Project</div>
+      <div className="md:text-[22px] text-[#ccc] mb-4">My first task as a Front-End developer was to develop 
       an online streaming site that involves upload videos, go live, interactions, comments and more. 
       It was fun and finally met Docker containers.
       <span className='text-yellow-500 ms-3'>#ReactJS #Bootstrap #Docker</span>
       </div>
-      <div className="grid grid-cols-5 gap-3">
-        <Item preview={SSYZ1} />
-        <Item preview={SSYZ2} />
-        <Item preview={SSYZ3} />
-        <Item preview={SSYZ4} />
-        <Item preview={SSYZ5} />
-        <Item preview={SSYZ6} />
-        <Item preview={SSYZ7} />
-        <Item preview={SSYZ8} />
-        <Item preview={SSYZ9} />
+      <div className="grid grid-cols-5 gap-3 md:mt-[40px]">
+        <Item preview={SSYZ1} title="Live Stream" />
+        <Item preview={SSYZ2} title="Upload Videos" />
+        <Item preview={SSYZ3} title="Setup Account" />
+        <Item preview={SSYZ4} title="Profile" />
+        <Item preview={SSYZ5} title="Watch Video" />
+        <Item preview={SSYZ6} title="Homepage" />
+        <Item preview={SSYZ7} title="Blogs" />
+        <Item preview={SSYZ8} title="Video Player" />
+        <Item preview={SSYZ9} title="Listen Music" />
       </div>
     </div>
   )

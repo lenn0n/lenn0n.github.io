@@ -8,7 +8,7 @@ type Props = {}
 function PageWrapper({ }: Props) {
   return (
     <>
-      <div className="overflow-hidden h-[90vh] w-[90vw] absolute z-[-2]">
+      <div className="overflow-hidden h-[90vh] w-[100vw] absolute z-[-2]">
         <div className="relative">
           {Array.from(Array(100).keys()).map((i) => (
             <div className="circle-container absolute">
