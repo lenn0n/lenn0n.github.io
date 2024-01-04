@@ -18,6 +18,7 @@ import "@assets/styles/addons.css"
 import "@assets/styles/main.css"
 import "lightbox2/dist/js/lightbox-plus-jquery.js"
 import "lightbox2/dist/css/lightbox.css"
+import Contact from '@pages/Contact/Contact';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route element={<PageWrapper />}>
         <Route path="/" element={<Landing />} />
         <Route path="/demo" element={<Demo />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     </>))
 

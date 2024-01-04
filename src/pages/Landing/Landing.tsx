@@ -25,7 +25,7 @@ function Landing({ }: Props) {
         </div>
         <div className="text-[20px] sm:text-[35px] text-gray-400 sm:mt-[-20px] flex md:items-center flex-col md:flex-row ">
           <span>Web Developer</span>
-          <span className='md:ms-4 text-[16px] text-yellow-300 drop-shadow-xl'>3 yrs work exp.</span>
+          <span className='md:ms-4 text-[16px] text-yellow-500 drop-shadow-xl'>3 yrs work exp.</span>
         </div>
         <div className="text-[14px] sm:text-[20px] text-white-400 mt-[20px] sm:mt-[50px] ">
           Been working in web development since 2015. If you are looking for someone who has experience with following:

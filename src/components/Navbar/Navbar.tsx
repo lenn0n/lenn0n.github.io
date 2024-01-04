@@ -8,22 +8,30 @@ type Props = {}
 
 function Navbar({ }: Props) {
   const navigate = useNavigate()
+
+  const isActive = (url: string) => {
+    if (window.location.pathname == url) {
+      return true
+    } else {
+      return false
+    }
+  }
   return (
     <div className='xs:p-2 sm:p-4'>
       <div className="mx-auto container">
         <div className="flex justify-between">
           <div className="flex gap-4 justify-center items-center">
-              <div className="flex gap-4 justify-center items-center lg:text-[20px]">
-                <div role="button" 
-                  onClick={()=> { navigate("/") }}
-                  className='hover:scale-[1.1] transition-all' >About</div>
-                <div role="button"
-                   onClick={()=> { navigate("/demo") }}
-                  className='hover:scale-[1.1] transition-all'>Journey</div>
-                <div role="button"
-                   onClick={()=> { navigate("/contact") }}
-                  className='hover:scale-[1.1] transition-all'>Contact</div>
-              </div>
+            <div className="flex gap-4 justify-center items-center lg:text-[20px]">
+              <div role="button"
+                onClick={() => { navigate("/") }}
+                className={`hover:scale-[1.1] transition-all ${isActive("/") ? 'text-yellow-500' : ''}`} >About</div>
+              <div role="button"
+                onClick={() => { navigate("/demo") }}
+                className={`hover:scale-[1.1] transition-all ${isActive("/demo") ? 'text-yellow-500' : ''}`} >Journey</div>
+              <div role="button"
+                onClick={() => { navigate("/contact") }}
+                className={`hover:scale-[1.1] transition-all ${isActive("/contact") ? 'text-yellow-500' : ''}`} >Contact</div>
+            </div>
           </div>
           <div className="hidden  gap-4 sm:flex">
             <a href="https://github.com/lenn0n" target='_blank'>
