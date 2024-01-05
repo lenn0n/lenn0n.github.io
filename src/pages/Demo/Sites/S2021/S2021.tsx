@@ -19,9 +19,9 @@ function S2021({ }: Props) {
       <div className="md:text-[22px] mb-4">
         I have learned a lot from my previous year, my next project in 2021 was to develop an MLM site. The user can see their downlines 
          in network view. User can login using SSO. Admin can view statistics and more.
-      <span className='text-yellow-500 ms-3'>#VueJS #Bootstrap #VisJS</span>
+      <span className='text-yellow-500 ms-3'>#VanillaJS #VueJS #Bootstrap #VisJS</span>
       </div>
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid grid-cols-5 gap-3 md:mt-[40px]">
         <Item preview={SSWC1} title="Login Screen" />
         <Item preview={SSWC2} title="Dashboard" />
         <Item preview={SSWC3} title="Network Tree" />

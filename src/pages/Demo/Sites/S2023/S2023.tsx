@@ -19,9 +19,9 @@ function S2023({ }: Props) {
       <div className="md:text-[22px] mb-4">
         These are my biggest project that has many features 
         such as deposit/withdrawal, P2P transactions, payment thru plaid and elavon, account management and statistics.
-      <span className='text-yellow-500 ms-3'>#ReactJS #VueJS #Bootstrap #Tailwind</span>
+      <span className='text-yellow-500 ms-3'>#ReactJS #VueJS #Bootstrap #Tailwind #Typescript</span>
       </div>
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid grid-cols-5 gap-3 md:mt-[40px]">
         <Item preview={SSOLE1} title="Login Page"/>
         <Item preview={SSOLE2} title="Requests"/>
         <Item preview={SSOLE3} title="Transactions"/>

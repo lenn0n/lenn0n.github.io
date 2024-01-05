@@ -20,7 +20,7 @@ function S2020({ }: Props) {
       <div className="md:text-[22px]  mb-4">My first task as a Front-End developer was to develop 
       an online streaming site that involves upload videos, go live, interactions, comments and more. 
       It was fun and finally met Docker containers.
-      <span className='text-yellow-500 ms-3'>#ReactJS #Bootstrap #Docker</span>
+      <span className='text-yellow-500 ms-3'>#Javascript #ReactJS #Bootstrap #Docker</span>
       </div>
       <div className="grid grid-cols-5 gap-3 md:mt-[40px]">
         <Item preview={SSYZ1} title="Live Stream" />

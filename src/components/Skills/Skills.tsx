@@ -135,7 +135,7 @@ const PLList = [
   {
     name: "Firebase",
     icon: FirebaseIcon,
-    desc: "Cloud functions, free web hosting, real-time database",
+    desc: "Cloud functions, free web hosting, real-time database and noSQL database.",
     exp: "9/10"
   },
 

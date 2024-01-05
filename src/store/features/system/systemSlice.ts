@@ -3,7 +3,8 @@ import JavascriptIcon from "@assets/images/icons/js.png"
 // Define a type for the slice state
 interface SystemState {
   selectedPL: PLTypes,
-  selectedYear: number
+  selectedYear: number,
+  showThugGlasses?: boolean
 }
 
 type PLTypes = {
@@ -23,7 +24,8 @@ const initialState: SystemState = {
     exp: "9/10",
     isUser: true
   },
-  selectedYear: 2020
+  selectedYear: 2020,
+  showThugGlasses: false,
 }
 
 export const systemSlice = createSlice({
@@ -37,12 +39,16 @@ export const systemSlice = createSlice({
     setSelectedYear: (state, action: PayloadAction<number>) => {
       state.selectedYear = action.payload;
     },
+    setShowThugGlasses: (state, action: PayloadAction<boolean>) => {
+      state.showThugGlasses = action.payload;
+    },
   },
 });
 
 export const {
   setSelectedPL,
-  setSelectedYear
+  setSelectedYear,
+  setShowThugGlasses
 } = systemSlice.actions
 
 export default systemSlice.reducer;

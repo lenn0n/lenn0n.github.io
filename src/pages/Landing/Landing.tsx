@@ -1,31 +1,49 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppSelector, useAppDispatch } from "@hooks/useRedux"
+import { setShowThugGlasses } from '@store/features/system/systemSlice'
 
 import Skills from '@components/Skills/Skills'
 import Frame from '@components/Frame/Frame'
 import Button from '@components/Button/Button'
 import Avatar from "@assets/images/avatar.png"
+import SmallAvatar from "@assets/images/small-avatar.jpg"
+import ThugGlasses from "@assets/images/thug-glasses.png"
 
 
 type Props = {}
 
 function Landing({ }: Props) {
   const navigate = useNavigate()
+  const dispatch = useAppDispatch()
   const selectedPL = useAppSelector((state) => state.system.selectedPL)
+  const showThugGlasses = useAppSelector((state) => state.system.showThugGlasses)
+
   const [showTransition, setShowTransition] = useState<boolean>(true)
 
   return (
-    <div className="xs:mt-[10px] sm:mt-[20px] xl:mt-[100px] grid xl:grid-cols-2 place-content-between">
+    <div className="mt-[30px] sm:mt-[40px] xl:mt-[100px] grid xl:grid-cols-2 place-content-between">
       <div className="">
-        <div className="text-[30px] mb-[-10px] hidden sm:block">Hi,</div>
-        <div className="text-[40px] sm:text-[80px] flex gap-2 sm:gap-5">
-          <div className="">I'm</div>
-          <div className="text-cyan-300 transition-all hover:text-cyan-500 " role='button'>Lennon</div>
-        </div>
-        <div className="text-[20px] sm:text-[35px] text-gray-400 sm:mt-[-20px] flex md:items-center flex-col md:flex-row ">
-          <span>Web Developer</span>
-          <span className='md:ms-4 text-[16px] text-yellow-300 drop-shadow-xl'>3 yrs work exp.</span>
+        <div className="flex gap-4 items-center">
+          <div className="h-[80px] w-[80px] xs:h-[120px] xs:w-[120px] 
+           sm:h-[180px] sm:w-[180px] lg:h-[220px] lg:w-[220px] block xl:hidden">
+            <img src={SmallAvatar} alt="" className="rounded-full" style={{ height: '100%', width: '100%'}} />
+          </div>
+          <div className="">
+            <div className="text-[30px] mb-[-10px] hidden sm:block">Hi,</div>
+            <div className="text-[30px] xs:text-[40px] sm:text-[80px] flex gap-2 sm:gap-5">
+              <div className="">I'm</div>
+              <div 
+              className="text-cyan-300 transition-all hover:text-cyan-500 " 
+              onMouseOver={()=>{ dispatch(setShowThugGlasses(true))}} 
+              onMouseLeave={()=>{ dispatch(setShowThugGlasses(false))}} 
+              role='button'>Lennon</div>
+            </div>
+            <div className="text-[20px] sm:text-[35px] text-gray-400 sm:mt-[-20px] flex md:items-center flex-col md:flex-row ">
+              <span>Web Developer</span>
+              <span className='md:ms-4 text-[16px] text-yellow-300 drop-shadow-xl'>3 yrs work exp.</span>
+            </div>
+          </div>
         </div>
         <div className="text-[14px] sm:text-[20px] text-white-400 mt-[20px] sm:mt-[50px] ">
           Been working in web development since 2015. If you are looking for someone who has experience with following:
@@ -45,9 +63,12 @@ function Landing({ }: Props) {
 
 
       </div>
-      <div className=" justify-end flex-col hidden xl:flex ms-[20px] me-[10px] xl:ms-[100px]">
-        <div className="flex justify-center -z-10 ">
-            <img src={Avatar} alt="" style={{ width: '430px' }} />
+      <div className="justify-end flex-col hidden xl:flex ms-[20px] me-[10px] xl:ms-[100px]">
+        <div className="flex justify-center -z-10 relative">
+          <img src={Avatar} alt="" style={{ width: '430px', height:'440px' }} />
+          <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[60px] right-[180px] left-[250px] transition-all`}>
+            <img src={ThugGlasses} alt="" style={{ height: '99px'}} />
+          </div>
         </div>
         <Frame>
           {selectedPL &&

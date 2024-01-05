@@ -24,7 +24,6 @@ function PageWrapper({ }: Props) {
         </div>
         <Footer />
       </div>
-      {/* <div className="h-[100vh]"></div> */}
     </>
   )
 }

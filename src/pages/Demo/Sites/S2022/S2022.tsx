@@ -16,11 +16,10 @@ function S2022({ }: Props) {
     <div className="">
       <div className="text-[25px] lg:text-[40px] text-cyan-400 font-medium">Improving Skills</div>
       <div className="md:text-[22px] mb-4">
-       Completed some dev challenges and developed two MLM sites. Nothing much project in 2022 so I did some research about container orchestrator,
-       Facebook/Twitter SDK
-      <span className='text-yellow-500 ms-3'>#VueJS #Tailwind #Bootstrap #VisJS</span>
+       Completed some dev challenges and developed two MLM sites. Nothing much project in 2022 so I read some documentation for me to improve my skills.
+      <span className='text-yellow-500 ms-3'>#VueJS #Tailwind #Bootstrap #VisJS #Typescript</span>
       </div>
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid grid-cols-5 gap-3 md:mt-[40px]">
         <Item preview={SSBA1} title="Downlines"/>
         <Item preview={SSBA2} title="Network Tree"/>
         <Item preview={SSBA3} title="Registration"/>
