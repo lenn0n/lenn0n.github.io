@@ -21,13 +21,13 @@ function Demo({ }: Props) {
     return year == yr ?
       <Button
         label={String(yr)}
-        className="!bg-white !text-cyan-900 hover:!white hover:!text-cyan-900"
+        className="!bg-yellow-300 !text-cyan-900 hover:!white hover:!text-cyan-900 rounded-bl-2xl rounded-tr-2xl"
       />
       :
       <Button
         onClick={() => { handleChangeYear(yr) }}
         label={String(yr)}
-        className="text-white hover:bg-cyan-400"
+        className="text-cyan-900 hover:bg-cyan-400 bg-white rounded-bl-2xl rounded-tr-2xl"
       />
 
   }

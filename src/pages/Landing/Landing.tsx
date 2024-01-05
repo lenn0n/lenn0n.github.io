@@ -66,9 +66,9 @@ function Landing({ }: Props) {
       <div className="justify-end flex-col hidden xl:flex ms-[20px] me-[10px] xl:ms-[100px]">
         <div className="flex justify-center -z-10 relative">
           <img src={Avatar} alt="" style={{ width: '430px', height:'440px' }} />
-          <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[60px] right-[180px] left-[250px] transition-all`}>
+          {/* <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[60px] right-[180px] left-[250px] transition-all`}>
             <img src={ThugGlasses} alt="" style={{ height: '99px'}} />
-          </div>
+          </div> */}
         </div>
         <Frame>
           {selectedPL &&
