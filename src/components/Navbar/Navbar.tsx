@@ -2,8 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Logo from "@assets/images/icons/logo.jpg"
 import GitHubIcon from "@assets/images/icons/github.png"
-import FacebookIcon from "@assets/images/icons/facebook.png"
-import InstagramIcon from "@assets/images/icons/ig.png"
+import LinkedIn from "@assets/images/icons/linked-in.png"
 type Props = {}
 
 function Navbar({ }: Props) {
@@ -41,11 +40,11 @@ function Navbar({ }: Props) {
                 src={GitHubIcon} style={{ width: '30px', height: '30px' }} alt="" />
             </a>
 
-            <a href="https://www.instagram.com/lennon_benedict" target='_blank'>
+            <a href="https://www.linkedin.com/in/lennon-benedict-jansuy-4887a7279/" target='_blank'>
               <img
                 role="button"
                 className='hover:scale-[1.1] transition-all'
-                src={InstagramIcon} style={{ width: '30px', height: '30px' }} alt="" />
+                src={LinkedIn} style={{ width: '30px', height: '30px' }} alt="" />
             </a>
             {/* <img
               role="button"
