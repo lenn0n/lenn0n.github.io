@@ -45,8 +45,8 @@ function Landing({ }: Props) {
             </div>
           </div>
         </div>
-        <div className="text-[14px] sm:text-[20px] text-white-400 mt-[20px] sm:mt-[50px] ">
-          Been working in web development since 2015. If you are looking for someone who has experience with following:
+        <div className="text-[14px] sm:text-[20px] text-white-400 mt-[20px] sm:mt-[50px] mb-5">
+          Been working in web development since 2015. Feel free to view my skills by clicking the icon below:
         </div>
         <Skills />
         <div className="mt-[20px] text-[14px]  xs:text-[14px] sm:text-[16px] block xl:hidden">
@@ -54,11 +54,11 @@ function Landing({ }: Props) {
           <span className='text-[#fff] '>- {selectedPL?.desc}</span>
         </div>
         <div className="mt-[20px] sm:mt-[50px] "></div>
-        <div className="mb-[10px] sm:text-[20px] text-white-400 hidden xl:block">Then you are in a good place.</div>
+        <div className="mb-[10px] sm:text-[20px] text-white-400 hidden xl:block">If you think I'm qualified</div>
 
         <Button className="!bg-white !text-cyan-900 hover:!bg-cyan-600 hover:!text-white" label="Hire Me!" onClick={() => { navigate("/contact") }} />
         <div className="inline-block ms-2">
-          <Button label="My Journey" onClick={() => { navigate("/demo") }} />
+          <Button label="View Journey" onClick={() => { navigate("/demo") }} />
         </div>
 
 
