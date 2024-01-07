@@ -41,7 +41,7 @@ function Landing({ }: Props) {
             </div>
             <div className="text-[20px] sm:text-[35px] text-gray-400 sm:mt-[-20px] flex md:items-center flex-col md:flex-row ">
               <span>Web Developer</span>
-              <span className='md:ms-4 text-[16px] text-yellow-300 drop-shadow-xl'>3 yrs work exp.</span>
+              <span className='md:ms-4 text-[16px] text-yellow-300 drop-shadow-xl'>4 yrs work exp.</span>
             </div>
           </div>
         </div>
@@ -66,9 +66,9 @@ function Landing({ }: Props) {
       <div className="justify-end flex-col hidden xl:flex ms-[20px] me-[10px] xl:ms-[100px]">
         <div className="flex justify-center -z-10 relative">
           <img src={Avatar} alt="" style={{ width: '430px', height:'440px' }} />
-          {/* <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[60px] right-[180px] left-[250px] transition-all`}>
-            <img src={ThugGlasses} alt="" style={{ height: '99px'}} />
-          </div> */}
+          <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[45px] right-[150px] left-[255px] transition-all`}>
+            <img src={ThugGlasses} alt="" style={{ height: '80px'}} />
+          </div>
         </div>
         <Frame>
           {selectedPL &&

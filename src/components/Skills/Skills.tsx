@@ -6,13 +6,12 @@ import JavascriptIcon from "@assets/images/icons/js.png"
 import HTMLIcon from "@assets/images/icons/html-5.png"
 import CSSIcon from "@assets/images/icons/css.png"
 import BSIcon from "@assets/images/icons/bootstrap.png"
-import ASIcon from "@assets/images/icons/as.png"
+import WebpackIcon from "@assets/images/icons/webpack.png"
 import DockerIcon from "@assets/images/icons/docker.png"
 import GithubIcon from "@assets/images/icons/git.png"
 import MySQLIcon from "@assets/images/icons/mysql.png"
 import NGINXIcon from "@assets/images/icons/nginx.png"
 import NodeJSIcon from "@assets/images/icons/nodejs.png"
-import PHPIcon from "@assets/images/icons/php.png"
 import ReactIcon from "@assets/images/icons/react.png"
 import RestAPIIcon from "@assets/images/icons/rest.png"
 import TWIcon from "@assets/images/icons/tailwind.svg"
@@ -127,10 +126,10 @@ const PLList = [
     exp: "8/10"
   },
   {
-    name: "Android Studio",
-    icon: ASIcon,
-    desc: "I used this app in my thesis and know some basic relative views.",
-    exp: "8/10"
+    name: "Webpack",
+    icon: WebpackIcon,
+    desc: "Bundler I always use in React and Vue. ",
+    exp: "9/10"
   },
   {
     name: "Firebase",
