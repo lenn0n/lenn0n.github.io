@@ -5,8 +5,10 @@ import FBIcon from "@assets/images/social/fb.svg"
 import DownloadIcon from "@assets/images/icons/download.png"
 import LinkedInIcon from "@assets/images/social/linkedin.svg"
 import TwitterIcon from "@assets/images/social/twitter.svg"
-import GithubIcon from "@assets/images/social/github.svg"
+import GithubIcon from "@assets/images/social/github.png"
 import TelegramIcon from "@assets/images/social/telegram.svg"
+import GmailIcon from "@assets/images/icons/gmail.png"
+import PhoneIcon from "@assets/images/icons/phone-call.png"
 import CheckIcon from "@assets/images/icons/check.png"
 import Resume from "@assets/others/resume.pdf"
 import DemoLink from "@assets/images/icons/demo-link.png"
@@ -41,7 +43,7 @@ function Contact({ }: Props) {
                 <img src={TwitterIcon} alt="" style={{ width: '100%' }} />
               </div>
               <a href="https://twitter.com/101394Lenn0n" target='_blank'>
-                <span className='text-[15px] sm:text-[20px] hover:text-yellow-500'>Twitter</span>
+                <span className='text-[15px] sm:text-[20px] hover:text-yellow-500'>Twitter / X</span>
               </a>
             </div>
 
@@ -59,16 +61,24 @@ function Contact({ }: Props) {
                 <img src={GithubIcon} alt="" style={{ width: '100%' }} />
               </div>
               <a href="https://github.com/lenn0n" target='_blank'>
-                <span className='text-[15px] sm:text-[20px] hover:text-yellow-500'>Github</span>
+                <span className='text-[15px] sm:text-[20px] hover:text-yellow-500'>GitHub Repo</span>
               </a>
             </div>
 
             <div className="mt-3 sm:mt-5 flex gap-4 items-center">
               <div className="h-[25px] w-[25px] sm:h-[40px] sm:w-[40px] ">
-                <img src={TelegramIcon} alt="" style={{ width: '100%' }} />
+                <img src={GmailIcon} alt="" style={{ width: '100%' }} />
               </div>
-              <a href="https://t.me/get_in_touch_lennon" target='_blank'>
-                <span className='text-[15px] sm:text-[20px] hover:text-yellow-500'>Telegram</span>
+              <a href="mailto:lennonbenedictjansuy@gmail.com" target='_blank'>
+                <span className='text-[15px] sm:text-[20px] hover:text-yellow-500'>lennonbenedictjansuy</span>
+              </a>
+            </div>
+            <div className="mt-3 sm:mt-5 flex gap-4 items-center">
+              <div className="h-[25px] w-[25px] sm:h-[40px] sm:w-[40px] ">
+                <img src={PhoneIcon} alt="" style={{ width: '100%' }} />
+              </div>
+              <a href="tel:639162261168" target='_blank'>
+                <span className='text-[15px] sm:text-[20px] hover:text-yellow-500'>(+63) 916 226 1168</span>
               </a>
             </div>
           </div>
@@ -92,9 +102,10 @@ function Contact({ }: Props) {
               </a>
             </div>
 
-            <div className="mt-[50px] text-[14px] flex gap-2">
+            {/* <div className="mt-[50px] text-[14px] flex gap-2">
               <img src={CheckIcon} alt="" style={{ height: '20px', width: '20px' }} />
-              This website was last updated in January 2024.</div>
+              This website was last updated in January 2024.
+              </div> */}
           </div>
         </div>
       </div>
