@@ -21,7 +21,7 @@ function Contact({ }: Props) {
         <div className=" hidden md:flex items-center justify-between">
           <div className=""></div>
           <div className="w-[40%] md:w-[80%]">
-            <Lottie animationData={AnimationData} loop={true} />
+            <Lottie animationData={JSON.parse(JSON.stringify(AnimationData))} loop={true} />
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-10">
