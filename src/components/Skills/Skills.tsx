@@ -60,15 +60,15 @@ const PLList = [
     exp: "9/10"
   },
   {
-    name: "Github",
+    name: "Git",
     icon: GithubIcon,
     desc: "Sharing code and engaging myself with creative developers.",
     exp: "9/10"
   },
   {
-    name: "mySQL",
+    name: "SQL",
     icon: MySQLIcon,
-    desc: "Been practicing my backend skills to become full-stack dev.",
+    desc: "Been practicing my backend skills to become full-stack dev. Currently mastering 'Sequelize'.",
     exp: "7/10"
   },
   {
