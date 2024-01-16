@@ -7,6 +7,7 @@ import Skills from '@components/Skills/Skills'
 import Frame from '@components/Frame/Frame'
 import Button from '@components/Button/Button'
 import Avatar from "@assets/images/avatar.png"
+import AvatarBG from "@assets/images/avatar-bg.png"
 import SmallAvatar from "@assets/images/small-avatar.jpg"
 import ThugGlasses from "@assets/images/thug-glasses.png"
 
@@ -61,23 +62,26 @@ function Landing({ }: Props) {
           <Button label="View Journey" onClick={() => { navigate("/demo") }} />
         </div>
 
-
       </div>
       <div className="justify-end flex-col hidden xl:flex ms-[20px] me-[10px] xl:ms-[100px]">
         <div className="flex justify-center -z-10 relative">
-          <img src={Avatar} alt="" style={{ width: '430px', height:'450px' }} />
-          <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[28px] right-[120px] rotate-[-15deg] left-[233px] transition-all`}>
-            <img src={ThugGlasses} alt="" style={{ height: '80px'}} />
+          <div className={`absolute -z-[11] w-[80%] h-[80%]`} >
+            <img src={AvatarBG} alt="" className=' 
+            animate-[spin_80s_linear_infinite]' style={{ width: '700px'}} />
+          </div>
+          <img src={Avatar} alt="" style={{ width: '400px', height:'530px' }} />
+          <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[66px] right-[120px] left-[252px] transition-all`}>
+            <img src={ThugGlasses} alt="" style={{ height: '90px'}} />
           </div>
         </div>
         <Frame>
           {selectedPL &&
             <div key={selectedPL.name}>
-              <div className={`text-[40px] text-cyan-800 text-start ${showTransition ? 'text_1' : ''}`}
+              <div className={`text-[40px]  text-start ${showTransition ? 'text_1' : ''}`}
                 onTransitionEnd={() => { setShowTransition(false) }}>
                 {selectedPL?.name}
               </div>
-              <div className="text-[20px]">
+              <div className="text-[18px] text-white-900">
                 {selectedPL?.desc}
                 <span className='text-yellow-300 ms-2'>{selectedPL?.exp}</span>
               </div>
@@ -87,7 +91,6 @@ function Landing({ }: Props) {
         {/* <div className="mt-[40px]">
           <div className="flex justify-center">
             <div className="mb-[10px] sm:text-[20px] text-white-400">Here are some of my frontend development journey.</div></div>
-
           <div className="flex justify-center"><Button label="My Journey" className='' onClick={() => { navigate("/demo") }} /></div>
         </div> */}
       </div>
