@@ -69,7 +69,7 @@ function Landing({ }: Props) {
             <img src={AvatarBG} alt="" className=' 
             animate-[spin_80s_linear_infinite]' style={{ width: '700px'}} />
           </div>
-          <img src={Avatar} alt="" style={{ width: '400px', height:'530px' }} />
+          <img src={Avatar} alt="" style={{ width: '360px', height:'530px' }} />
           <div className={`${showThugGlasses ? 'absolute' : 'hidden'} top-[66px] right-[120px] left-[252px] transition-all`}>
             <img src={ThugGlasses} alt="" style={{ height: '90px'}} />
           </div>
