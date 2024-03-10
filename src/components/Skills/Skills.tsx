@@ -26,62 +26,62 @@ const PLList = [
     name: "JavaScript",
     icon: JavascriptIcon,
     desc: "One of my favorite programming language that I am using for the past years.",
-    exp: "9/10"
+    exp: "5yrs exp"
   },
   {
     name: "TypeScript",
     icon: TSIcon,
     desc: "Lots of typing but fun experience. Been using alot than javascript.",
-    exp: "9/10"
+    exp: "2yrs exp"
   },
   {
     name: "HTML",
     icon: HTMLIcon,
     desc: "Manipulating DOM and virtual DOM.",
-    exp: "9/10"
+    exp: "12yrs exp"
   },
   {
     name: "CSS",
     icon: CSSIcon,
     desc: "All basic CSS and its fundamentals.",
-    exp: "9/10"
+    exp: "12yrs exp"
   },
   {
     name: "Boostrap",
     icon: BSIcon,
     desc: "One of my best partner and helps me speed up designing a page.",
-    exp: "9/10"
+    exp: "5yrs exp"
   },
 
   {
     name: "Docker",
     icon: DockerIcon,
     desc: "Dockerizing apps. Strong understanding in Kubernetes Deployments, Pods, Services and more.",
-    exp: "9/10"
+    exp: "1yr exp"
   },
   {
     name: "Git",
     icon: GithubIcon,
     desc: "Sharing code and engaging myself with creative developers.",
-    exp: "9/10"
+    exp: "4yrs exp"
   },
   {
     name: "SQL",
     icon: MySQLIcon,
     desc: "Been practicing my backend skills to become full-stack dev. Currently mastering 'Sequelize'.",
-    exp: "7/10"
+    exp: "4yrs exp"
   },
   {
     name: "NGINX",
     icon: NGINXIcon,
     desc: "I use this for proxy forwarding and serving of static files.",
-    exp: "9/10"
+    exp: "3yrs exp"
   },
   {
     name: "NodeJS",
     icon: NodeJSIcon,
     desc: "ExpressJS and Dealing with CORS. I used this to run my code in container. ",
-    exp: "9/10"
+    exp: "4yrs exp"
   },
   // {
   //   name: "PHP",
@@ -93,49 +93,49 @@ const PLList = [
     name: "ReactJS",
     icon: ReactIcon,
     desc: "My favorite library to build strong web applications. ",
-    exp: "9/10"
+    exp: "4yrs exp"
   },
   {
     name: "Restful API",
     icon: RestAPIIcon,
     desc: "Collaborating with backends, using PostMan and handling response.",
-    exp: "9/10"
+    exp: "6yrs exp"
   },
   {
     name: "Tailwind",
     icon: TWIcon,
     desc: "Been using this framework alot. Super easy to use. I can't live without TW!",
-    exp: "9/10"
+    exp: "1yr exp"
   },
   {
     name: "Redux",
     icon: ReduxIcon,
     desc: "State management tool for react. For Vue, I use Vuex.",
-    exp: "9/10"
+    exp: "4yrs exp"
   },
   {
     name: "VueJS",
     icon: VueIcon,
     desc: "Been using framework alot in my MLM projects.",
-    exp: "9/10"
+    exp: "4yrs exp"
   },
   {
     name: "Express",
     icon: ExpressIcon,
     desc: "Creating Restful API and serving of static files.",
-    exp: "8/10"
+    exp: "2yrs exp"
   },
   {
     name: "Webpack",
     icon: WebpackIcon,
     desc: "Bundler I always use in React and Vue. ",
-    exp: "9/10"
+    exp: "3yrs exp"
   },
   {
     name: "Firebase",
     icon: FirebaseIcon,
     desc: "Cloud functions, free web hosting, real-time database and noSQL database.",
-    exp: "9/10"
+    exp: "2yrs exp"
   },
 
 ]

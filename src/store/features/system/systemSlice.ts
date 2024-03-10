@@ -21,7 +21,7 @@ const initialState: SystemState = {
     name: "JavaScript",
     icon: JavascriptIcon,
     desc: "One of my favorite programming language that I am using for the past years.",
-    exp: "9/10",
+    exp: "5yrs exp",
     isUser: true
   },
   selectedYear: 2020,
