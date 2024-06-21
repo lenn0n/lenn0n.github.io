@@ -1,0 +1,14 @@
+{
+  "greeting": "I'm <1>{{name}}</1>",
+  "introduction": "I have been working in web development since 2015 and have a strong understanding of the following modern web technologies.",
+  "my_resume": "My Resume (as of {{date}})",
+  "def_javascript": "A powerful programming language that plays a crucial role in modern web development. ",
+  "title_2020": "First Project in 2020",
+  "desc_2020": "My first task as a Front-End developer was to develop an online streaming site that involves upload videos, go live, interactions, comments and more. Built with ReactJS and Dockerized. ",
+  "title_2021": "Learned From Mistakes",
+  "desc_2021": "I have learned a lot from my previous year, my next project in 2021 was to develop a Multi-level marketing site. The user can see their downlines in network view. User can login using SSO. Admin can view statistics and more.",
+  "title_2022": "Improving Skills",
+  "desc_2022": "Completed some dev challenges and developed two MLM sites. Nothing much project in 2022 so I read some documentation for me to improve my skills.",
+  "title_2023": "Putting It All Together",
+  "desc_2023": "These are my biggest project that has many features such as deposit/withdrawal, P2P transactions, payment thru plaid and elavon, account management and statistics."
+}
