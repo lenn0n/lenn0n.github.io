@@ -3,12 +3,12 @@
   "introduction": "I have been working in web development since 2015 and have a strong understanding of the following modern web technologies.",
   "my_resume": "My Resume (as of {{date}})",
   "def_javascript": "A powerful programming language that plays a crucial role in modern web development. ",
-  "title_2020": "First Project in 2020",
-  "desc_2020": "My first task as a Front-End developer was to develop an online streaming site that involves upload videos, go live, interactions, comments and more. Built with ReactJS and Dockerized. ",
-  "title_2021": "Learned From Mistakes",
-  "desc_2021": "I have learned a lot from my previous year, my next project in 2021 was to develop a Multi-level marketing site. The user can see their downlines in network view. User can login using SSO. Admin can view statistics and more.",
-  "title_2022": "Improving Skills",
-  "desc_2022": "Completed some dev challenges and developed two MLM sites. Nothing much project in 2022 so I read some documentation for me to improve my skills.",
-  "title_2023": "Putting It All Together",
-  "desc_2023": "These are my biggest project that has many features such as deposit/withdrawal, P2P transactions, payment thru plaid and elavon, account management and statistics."
+  "title_2020": "React Development",
+  "desc_2020": "Yazsee is a video streaming platform that helps users to share contents like videos, blogs and earn tips from their viewers. This was my first project as a frontend developer.",
+  "title_2021": "Vue Development",
+  "desc_2021": "WorldCraft is a Multilevel Marketing website and has partnered with ****. The main concept is the user will get a commission by inviting or purchasing goods from partnered website. It has a network view to visualize user's hierarchy. ",
+  "title_2022": "Leveled Up!",
+  "desc_2022": "I took some DevChallenges to improve myself in Responsive Designs and writing in TypeScript. I implemented internationalization, tried NextJS Framework and follow some best practices such as SOLID, KISS, DRY nd YAGNI.",
+  "title_2023": "Continuous Integration and Delivery",
+  "desc_2023": "I learned some DevOps Operations and tried some cloud providers like AWS, DigitalOcean and Alibaba. Creating my own pipelines for my workflows using GitHub Actions and K8s fundamentals."
 }
