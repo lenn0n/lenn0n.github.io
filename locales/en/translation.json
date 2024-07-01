@@ -1,6 +1,6 @@
 {
   "greeting": "I'm <1>{{name}}</1>",
-  "introduction": "I have been working in web development since 2015 and have a strong understanding of the following modern web technologies.",
+  "introduction": "I have been working in web development since 2015 and have a strong understanding with the following modern web technologies:",
   "my_resume": "My Resume (as of {{date}})",
   "def_javascript": "A powerful programming language that plays a crucial role in modern web development. ",
   "title_2020": "React Development",
