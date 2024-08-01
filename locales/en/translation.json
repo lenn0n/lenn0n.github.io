@@ -8,7 +8,7 @@
   "title_2021": "Everything is JavaScript",
   "desc_2021": "I started to work on this project in 2022. We have developed an MLM solution to WCPH to encourage more visitors. The main idea here is the upline (user) can earn points from their downlines(user)  thru referral link and make them register. The web application uses SSO login that validates the token from our end to their backend.",
   "title_2022": "Leveled Up!",
-  "desc_2022": "I took some DevChallenges to improve myself in Responsive Designs and writing in TypeScript. I implemented internationalization, tried NextJS Framework and followed some best practices such as SOLID, KISS, DRY nd YAGNI.",
+  "desc_2022": "I took some DevChallenges to improve myself in Responsive Designs and writing in TypeScript. I implemented intl', PWA, tried NextJS Framework and followed some best practices such as SOLID, KISS, DRY nd YAGNI.",
   "title_2023": "Continuous Integration and Delivery",
   "desc_2023": "I learned some DevOps Operations and tried some cloud providers like AWS, DigitalOcean and Alibaba. Creating my own pipelines for my workflows using GitHub Actions and K8s fundamentals."
 }
