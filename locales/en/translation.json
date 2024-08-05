@@ -1,8 +1,8 @@
 {
   "greeting": "I'm <1>{{name}}</1>",
-  "introduction": "I have been working in web development since 2015 and have a strong understanding with the following modern web technologies:",
+  "introduction": "I have been working in web development since 2015. Here are some of the libraries and tools I have used in my previous project.",
   "my_resume": "My Resume (as of {{date}})",
-  "def_javascript": "A powerful programming language that plays a crucial role in modern web development. ",
+  "def_javascript": "An engine that implements standard ECMAScript. Widely used in my projects and mostly written in ES6.",
   "title_2020": "First Project",
   "desc_2020": "This was my first project as a front-end developer. The project was divided into 5 services: Login/Signup, Video, Live, Blogs and Creator.  I have worked in each service and deployed it separately. The most challenging part here is everything is new to me. I have to think in React way. I have implemented Socket.io for live chat and notifications, dealt with Safari web player issues and followed the best practices.",
   "title_2021": "Everything is JavaScript",
